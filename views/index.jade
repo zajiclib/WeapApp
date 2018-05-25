@@ -1,0 +1,16 @@
+extends layout
+
+block content
+     section#todo
+      header#header
+       h1 WEAP - TODO
+       form( id='todo-form')
+        input(id='new-todo', placeholder="Zadání úkolu", name='title')
+      section#main
+       input(id="toggle-all", type="checkbox")
+       ul#todo-list
+      footer#footer
+     div#info
+
+      input(id='viewjson', type='button', value='JSON')
+      input(id='viewdone', type='button', value='Hotové úkoly')
